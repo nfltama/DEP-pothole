@@ -12,8 +12,9 @@
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 	
 	<!-- CSS -->
-	<link rel="stylesheet" href={{ url_for('static', filename='/css/bootstrap.min.css') }} type="text/css">
-	<link rel="stylesheet" href={{ url_for('static', filename='/css/client_side.css') }}  type="text/css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/bootstrap.min.css').replace('http://', 'https://') }}" type="text/css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/client_side.css').replace('http://', 'https://') }}" type="text/css">
+
 	
 	<!-- JavaScript -->
 	<script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js', _external=True, _scheme='https') }}></script>
