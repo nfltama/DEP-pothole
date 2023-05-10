@@ -16,8 +16,8 @@
 	<link rel="stylesheet" href={{ url_for('static', filename='/css/client_side.css') }}  type="text/css">
 	
 	<!-- JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+	<script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js', _external=True, _scheme='https') }}></script>
+	<script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js', _external=True, _scheme='https') }}></script>
 </head>
 
 <body id="halamanku" data-spy="scroll" data-target=".navbar" data-offset="60">
